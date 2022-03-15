@@ -26,6 +26,6 @@ jobs:
       - name: Send Deployment Request To Jenkins
         uses: wei/curl@v1
         with:
-          args: http://3.12.154.131:8080/generic-webhook-trigger/invoke -d 'token=${{secrets.JENKINS_TOKEN}}&version=${{github.run_number}}'          
+          args: http://44.192.40.115:8080/generic-webhook-trigger/invoke -d 'token=${{secrets.JENKINS_TOKEN}}&version=${{github.run_number}}'          
           # args: https://jsonplaceholder.typicode.com/todos/1
           # Add here your Jenkins Webhook link and the token you generated for Jenkins on your server.
