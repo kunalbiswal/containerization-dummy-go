@@ -3,7 +3,7 @@ name: Docker Build And Push
 on:
   push:
     branches:
-      - "test"
+      - [test, main, release]
 
 jobs:
   docker:
