@@ -2,12 +2,10 @@ name: Go
 
 on:
   push:
-    branches:
-      - [test]
+    branches: [test, release]
 
   pull_request:
-    branches:
-      - [test]
+    branches: [test]
 
 jobs:
   # The “build” workflow
