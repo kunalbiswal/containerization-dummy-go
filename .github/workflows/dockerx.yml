@@ -3,7 +3,7 @@ name: Docker Build And Push
 on:
   push:
     branches:
-      - "main"
+      - "test"
 
 jobs:
   docker:
@@ -25,9 +25,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: devenes/dummy-go:${{github.run_number}}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dummy-go:${{github.run_number}}
 
       # - name: Send Deployment Request To Jenkins
       #   uses: wei/curl@v1
       #   with:
-      #     args: http://44.192.40.115:8080/generic-webhook-trigger/invoke -d 'token=${{secrets.JENKINS_TOKEN}}&version=${{github.run_number}}'
+      #     args: <jenkins_server_ip>/generic-webhook-trigger/invoke -d 'token=${{secrets.JENKINS_TOKEN}}&version=${{github.run_number}}'
