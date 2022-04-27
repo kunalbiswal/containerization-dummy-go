@@ -3,11 +3,14 @@ name: Go
 on:
   push:
     branches:
-      - [test, main, release]
+      - [test]
+      - [release]
+      - [master]
+      - [main]
 
   pull_request:
     branches:
-      - [test, main, release]
+      - [test]
 
 jobs:
   # The “build” workflow
