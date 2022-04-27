@@ -8,9 +8,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - echo Building the Docker image...          
+      - echo Building the Docker image...
       - docker build -t mydockerrepo .
-      - docker tag mydockerrepo:latest 32976713052.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG 
+      - docker tag mydockerrepo:latest 32976713052.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
   post_build:
     commands:
       - echo Build completed on `date`
