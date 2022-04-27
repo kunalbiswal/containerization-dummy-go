@@ -1,5 +1,7 @@
 # CI/CD with Golang
 
+[![Go](https://github.com/devenes/containerization-dummy-go/actions/workflows/go.yml/badge.svg)](https://github.com/devenes/containerization-dummy-go/actions/workflows/go.yml)
+
 ## Part 1
 
 - Since we want to trigger the CI/CD process with the push we will perform within the GitHub ecosystem, we have pushed the source code to our own repo.
