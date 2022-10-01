@@ -21,6 +21,7 @@ func main() {
 		}
 		return nil
 	}).Name = "index"
+
 	e.GET("/about", func(c echo.Context) error {
 		if err := c.HTML(http.StatusOK, "Uzaylılar tarafından kaçırıldım. Evet, tarafından."); err != nil {
 			return err
@@ -38,6 +39,7 @@ func main() {
 	e.GET("/health", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
 	}).Name = "health"
+
 	e.GET("/health/ping", func(c echo.Context) error {
 		return c.JSON(http.StatusOK, struct{ Status string }{Status: "OK"})
 	}).Name = "health-ping"
