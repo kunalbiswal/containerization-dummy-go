@@ -1,4 +1,4 @@
-## CI/CD with Golang
+# CI/CD with Golang
 
 [![Go](https://github.com/devenes/containerization-dummy-go/actions/workflows/go.yml/badge.svg)](https://github.com/devenes/containerization-dummy-go/actions/workflows/go.yml) [![Docker Build And Push](https://github.com/devenes/containerization-dummy-go/actions/workflows/dockerx.yml/badge.svg)](https://github.com/devenes/containerization-dummy-go/actions/workflows/dockerx.yml)
 
